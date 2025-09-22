@@ -11,7 +11,7 @@ except:
 class AgendaGirlFinal(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title('Mi Agenda ✨')
+        self.title('Mi Agenda')
 
         # Ventana grande automáticamente
         self.state('zoomed')  # Maximizada en Windows
@@ -30,7 +30,7 @@ class AgendaGirlFinal(tk.Tk):
         self._crear_controles()
 
     def _crear_treeview(self):
-        tk.Label(self.frame_lista, text='✨ Eventos Programados ✨', bg='#fff0f5', fg='#ff66b2',
+        tk.Label(self.frame_lista, text='Eventos Programados', bg='#fff0f5', fg='#ff66b2',
                  font=('Comic Sans MS', 14, 'bold')).pack(anchor='w', pady=(0,10))
 
         cols = ('fecha', 'hora', 'desc')
@@ -52,7 +52,7 @@ class AgendaGirlFinal(tk.Tk):
         scrollbar.pack(side='right', fill='y')
 
     def _crear_controles(self):
-        tk.Label(self.frame_controles, text='📝 Nuevo Evento', bg='#fff0f5', fg='#ff66b2',
+        tk.Label(self.frame_controles, text='Nuevo Evento', bg='#fff0f5', fg='#ff66b2',
                  font=('Comic Sans MS', 12, 'bold')).pack(anchor='w', pady=(0,10))
 
         tk.Label(self.frame_controles, text='Fecha (dd-mm-aaaa)', bg='#fff0f5', fg='#993366').pack(anchor='w')
